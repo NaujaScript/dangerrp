@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        'navy-blue': '#050A10',
+      },
       fontFamily: {
         'russo': ['Russo One', 'sans-serif']
       },
@@ -12,8 +15,8 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'hero-pattern': "url('/img/background.jpg')",
-        'interchange': "url('/img/interchange-min.jpg')",
-        'highway': "url('/img/highway-min.jpg')",
+        'mustang': "url('/img/mustang.jpg')",
+        'emergency': "url('/img/emergency.jpg')",
         'road': "url('/img/road-min.jpg')",
       }),
 
