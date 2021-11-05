@@ -7,39 +7,41 @@ import { Transition } from "@headlessui/react";
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="xl:py-10 md:py-4 py-4 pb-14 md:pb-4 z-40 top-0 font-russo lg:bg-transparent bg-gray-700">
+    <header className="xl:py-10 md:py-4 py-4 pb-14 md:pb-4 z-40 top-0 font-russo lg:bg-transparent bg-yellow-500">
       <nav className="bg-transparent">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 mx-auto max-w-7xl">
             <div className="w-full justify-between flex items-center">
               <div className="flex-shrink-0 flex items-center text-white">
-                <img
-                  className="h-16 w-36"
-                  src="../img/logo.png"
-                  alt="Workflow"
-                />
+                <a href="dangerrp.pl">
+                  <img
+                    className="h-36 w-36 hover:animate-bounce hover:duration-1000 hover:delay-300"
+                    src="../img/logo.png"
+                    alt="Workflow"
+                  />
+                </a>
               </div>
               <div className="hidden md:flex">
                 <div className="ml-10 flex">
                   <div class="space-x-24">
                     <a
                       activeClassName="active"
-                      href="/map"
-                      className="text-xl border-yellow-400 border-b-2 shadow-2xl tracking-wider w-40 text-white hover:border-0"
+                      href="https://dangerrp.pl"
+                      className="text-xl border-yellow-400 border-b-2 shadow-2xl tracking-wider w-40 text-white hover:transition hover:duration-300 hover:delay-150 hover:border-0"
                     >
                       Strona Główna
                     </a>
 
                     <a
-                      href="#"
-                      className="text-xl border-yellow-400 border-b-2 shadow-2xl tracking-wider w-40 text-white hover:border-0"
+                      href="https://dc.dangerrp.pl/"
+                      className="text-xl border-yellow-400 border-b-2 shadow-2xl tracking-wider w-40 text-white hover:transition hover:duration-300 hover:delay-150 hover:border-0"
                     >
                       Discord
                     </a>
 
                     <a
-                      href="#"
-                      className="text-xl border-yellow-400 border-b-2 shadow-2xl tracking-wider w-40 text-white hover:border-0"
+                      href="http://regulamin.dangerrp.pl/"
+                      className="text-xl border-yellow-400 border-b-2 shadow-2xl tracking-wider w-40 text-white hover:transition hover:duration-300 hover:delay-150 hover:border-0"
                     >
                       Regulamin
                     </a>
@@ -107,33 +109,26 @@ function Nav() {
         >
           {(ref) => (
             <div className="md:hidden absolute w-full z-50" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 font-sans text-center bg-gray-700 border-gray-600 border-b-2">
+              <div ref={ref} className="px-2 mt-4 pb-3 space-y-1 sm:px-3 font-sans text-center bg-yellow-500 border-gray-600 border-b-2">
                 <a
-                  href="#"
-                  className="active:border-red-600 active:border-b-2 hover:border-red-600 hover:border-b-2 text-white hover:text-white block px-3 py-2 text-base font-medium"
+                  href="https://dangerrp.pl"
+                  className="active:border-gray-600 active:border-b-2 hover:border-gray-600 hover:border-b-2 text-white hover:text-white block px-3 py-2 text-base font-medium"
                 >
-                  O firmie
+                  Strona Główna
                 </a>
 
                 <a
-                  href="#"
-                  className="text-white active:border-red-600 active:border-b-2 hover:border-red-600 hover:border-b-2 hover:text-white block px-3 py-2 text-base font-medium"
+                  href="https://dc.dangerrp.pl/"
+                  className="text-white active:border-gray-600 active:border-b-2 hover:border-gray-600 hover:border-b-2 hover:text-white block px-3 py-2 text-base font-medium"
                 >
-                  Transport
+                  Discord
                 </a>
 
                 <a
-                  href="#"
-                  className="text-white active:border-red-600 active:border-b-2 hover:border-red-600 hover:border-b-2 hover:text-white block px-3 py-2 text-base font-medium"
+                  href="http://regulamin.dangerrp.pl/"
+                  className="text-white active:border-gray-600 active:border-b-2 hover:border-gray-600 hover:border-b-2 hover:text-white block px-3 py-2 text-base font-medium"
                 >
-                  Kariera
-                </a>
-
-                <a
-                  href="#"
-                  className="text-white active:border-red-600 active:border-b-2 hover:border-red-600 hover:border-b-2 hover:text-white block px-3 py-2 text-base font-medium"
-                >
-                  Kontakt
+                  Regulamin
                 </a>
               </div>
             </div>
